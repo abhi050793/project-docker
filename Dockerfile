@@ -5,3 +5,4 @@ WORKDIR /var/www/html
 RUN unzip xbe.zip; mv xbe/* . ; rm -rvf xbe/ xbe.zip
 EXPOSE 80
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+
